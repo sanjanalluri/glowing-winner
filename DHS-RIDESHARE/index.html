@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html class="content">
+  <head>
+    <meta charset="utf-8">
+    <title>GaelShare</title>
+      <link rel = "icon" type = "image/png" href = "Images/car.png">
+    <link href="Bootstrap/style.css" rel="stylesheet" type="text/css">
+    </div>
+    <style>
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap')
+</style>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap');
+</style>
+  </head>
+<body>
+
+<header class="mastheadhome" id="maincon">
+<div class="nav" id="nav">
+<ul class="nav nav-pills nav-fill">
+  <li class="nav-item">
+    <a class="nav-link active" id="nav-link active" href="index.html">Home</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="GiveRide.html">Give a Ride</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="GetRide.html">Get a Ride</a>
+  </li>
+</ul>
+</div>
+
+<div class="jumbotron" style="background-color: black;">
+<div class="container">
+<div class="title">
+  <div class="heading2">
+      <h1 class="gaelshare">gaelshare</h1>
+    </div>
+  <div class="heading1">
+      <h2 class="description">A DHS ridesharing website</h2>
+    </div>
+      <img class="centerimg" src="Images/abstract1.jpeg" alt="abstract">
+</div>
+</div>
+</div>
+</header>
+<br></br>
+<div class="jumbotron">
+<div class="container">
+<div class="row" style="background-color: rgb(220, 220, 220, 0.6);">
+<div class="col-md-5">
+      <h1>GaelShare: Arranging carpools for DHS students since 2021</h1>
+      <p>Capable of easily arranging carpools for DHS students, GaelShare is presented in a website format and is coded completely in HTML/CSS. Bootstrap, an open-source CSS framework, is also used to more effectively structure a responsive webpage. The website currently harbors three pages, two of which serve as forms to collect user input. The data received from these forms can then be processed through a web server interface and fed into a back-end algorithm. Our website's front-end, focused on effectiveness and simplicity, can smoothly receive user input and presents information using a straightforward, clean, and readable layout.</p>
+      <p>GaelShare offers a:
+      <ul>
+        <li><p>Responsive, accessible, and easy to navigate webpage</p></li>
+        <li><p>Reliable backend algorithm and effective user-input features</p></li>
+        <li><p>Rideshare website targeted towards the needs of DHS students</p></li>
+      </ul>  
+      </p>
+</div>
+    <div class="col-md-7">
+      <img src="Images/dhs.jpeg" class="dhs" alt="dhs">
+      <br></br>
+      <!-- <figcaption style="text-align: center;"><p>~Nakahara Chuuya~</p></figcaption>
+      <audio class="audio" controls> 
+            <source src="Images/nakaharachuuya.mp3" type="audio/mp3">
+            <source src="Images/nakaharachuuya.mp3" type="audio/mp3">Your browser does not support the audio element. 
+          </audio> -->
+      </div>
+      </div>
+<br></br>
+<div class="row" style="background-color: rgb(220, 220, 220, 0.6);">
+  <div class="col-md-7">
+      <img src="Images/pythoncode.jpeg" class="dazaiwave" alt="dazaiwave">
+      <br></br>
+      <p style="text-align: center;"><a href="Images/pythoncode.pdf" target="_blank">Click here to view full Python code</a></p>
+      </div>
+    <div class="col-md-5">
+      <h1>Powered by a Python Algorithm</h1>
+      <p>In order to find rides for DHS students, a Python backend algorithm will be used to pair students up with their riders, or other parents from the DHS community. In this Python algorithm there are currently three main components, as shown here. There are three functions, the first called close_distance(), which determines if the potential rider and driver are close enough to be considered to carpool together. To determine this information given the address of both users, a Python package called geopy is used to provide exact locations. This code only considers a rider and driver available to carpool as long they are within 1 mile of each other. The second function close_time() only considers a rider and driver compatible if their preferred pick-up times are within 15 minutes of each other. The last function carpool() calls the previous two functions to make a final decision; if both functions agree that the pair are suitable to carpool, it returns True, and False otherwise. This code uses sample data to replace user data that would otherwise be obtained through forms on the website, as well as example runs to see how the program works given multiple different cases.</p>
+      </div>
+      </div>
+<br></br>
+<div class="row" style="background-color: rgb(220, 220, 220, 0.6);">
+    <div class="col-md-5">
+      <h1>Data Pathways Modeled Using NetLogo</h1>
+      <p>GaelShare involves two programming languages: <b>HTML/CSS</b> and <b>Python</b>. It is important to understand how the information inputted into the HTML/CSS website is transferred to the Python algorithm so that compatible riders can be matched together. In order to visualize the communication between the two languages, we used <b>Netlogo</b> to create a simulation. Netlogo is a programming software that allows the user to experiment with the creation of different environments and observe the behavior of agents that interact within that environment.
+      <br></br>
+      The yellow patch represents the <b>HTML/CSS website</b>. The red patch represents the <b>Python algorithm</b>. The agent, or the car, represents the user-inputted information traveling from side to side. The road represents the <b>WSGI</b> (Web Server Gateway Interface), which connects the Python to the HTML/CSS. The car's original color is yellow when it is in the yellow patch (the HTML/CSS website). However, as it crosses the road into the red patch (the Python algorithm), it turns red. This is the Python algorithm interpreting the inputted information and matching riders together. The car then travels back to the HTML/CSS website, notifying riders of their successful match.
+      <br></br>
+      Depicting the communication of HTML/CSS and Python in such a way allows inexperienced users to understand the way our website functions.
+      </p>
+      </div>
+    <div class="col-md-7">
+      <img src="Images/nlogo-gif.gif" class="netlogo" alt="netlogo">
+      </div>
+      </div>
+    </div>
+</div>
+
+  </div>
+</div>
+
+</body>
+<br></br>
+<footer class="jumbotron">
+<div class="row" style="background-color: rgb(220, 220, 220, 0.6);">
+<div class="container">
+      <div class="col-md-2">
+        <a href="mailto:qiu.isabella11@gmail.com" target="_blank" subject="subjecttext"><img class="mail" src="Images/mail.png"></a>
+        <p style="padding: 5px; display: inline;">email us!</p>
+     </div>
+</div>
+</footer>
+</section>
+</html>
