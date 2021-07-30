@@ -1,5 +1,11 @@
 from geopy.geocoders import Nominatim
 from geopy.distance import geodesic
+import cgi
+
+# Linking HTML and Python together
+form = cgi.FieldStorage()
+searchterm =  form.getvalue('Name:')
+print(searchterm)
 
 # example data includes 1 potential rider and 4 potential pickup options
 # in the following format: [name, time of pick up, address]
